@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFB75E17-8FF5-4C66-BF14-D7FED99CC6FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication3</RootNamespace>
+    <AssemblyName>WindowsFormsApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="allinDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allinDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="allinDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allinDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="allinDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allinDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="allinDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allinDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="main_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_login.Designer.cs">
+      <DependentUpon>main_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistics.Designer.cs">
+      <DependentUpon>statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="map.Designer.cs">
+      <DependentUpon>map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="media_doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="media_doc.Designer.cs">
+      <DependentUpon>media_doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify_pollution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify_pollution.Designer.cs">
+      <DependentUpon>modify_pollution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify_search_engine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify_search_engine.Designer.cs">
+      <DependentUpon>modify_search_engine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify_site.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify_site.Designer.cs">
+      <DependentUpon>modify_site.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify_site_environment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify_site_environment.Designer.cs">
+      <DependentUpon>modify_site_environment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify_table_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify_table_menu.Designer.cs">
+      <DependentUpon>modify_table_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pollution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pollution.Designer.cs">
+      <DependentUpon>pollution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="readin_pollution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readin_pollution.Designer.cs">
+      <DependentUpon>readin_pollution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="readin_site_environment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readin_site_environment.Designer.cs">
+      <DependentUpon>readin_site_environment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="readin_table_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readin_table_menu.Designer.cs">
+      <DependentUpon>readin_table_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="risk_accessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="risk_accessment.Designer.cs">
+      <DependentUpon>risk_accessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_engine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_engine.Designer.cs">
+      <DependentUpon>search_engine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="site.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="site.Designer.cs">
+      <DependentUpon>site.cs</DependentUpon>
+    </Compile>
+    <Compile Include="site_environment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="site_environment.Designer.cs">
+      <DependentUpon>site_environment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="readin_site.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readin_site.Designer.cs">
+      <DependentUpon>readin_site.cs</DependentUpon>
+    </Compile>
+    <Compile Include="table_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="table_menu.Designer.cs">
+      <DependentUpon>table_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="main_login.resx">
+      <DependentUpon>main_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statistics.resx">
+      <DependentUpon>statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map.resx">
+      <DependentUpon>map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="media_doc.resx">
+      <DependentUpon>media_doc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify_pollution.resx">
+      <DependentUpon>modify_pollution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify_search_engine.resx">
+      <DependentUpon>modify_search_engine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify_site.resx">
+      <DependentUpon>modify_site.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify_site_environment.resx">
+      <DependentUpon>modify_site_environment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify_table_menu.resx">
+      <DependentUpon>modify_table_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pollution.resx">
+      <DependentUpon>pollution.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readin_pollution.resx">
+      <DependentUpon>readin_pollution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readin_site_environment.resx">
+      <DependentUpon>readin_site_environment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readin_table_menu.resx">
+      <DependentUpon>readin_table_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="risk_accessment.resx">
+      <DependentUpon>risk_accessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_engine.resx">
+      <DependentUpon>search_engine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="site.resx">
+      <DependentUpon>site.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="site_environment.resx">
+      <DependentUpon>site_environment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readin_site.resx">
+      <DependentUpon>readin_site.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="table_menu.resx">
+      <DependentUpon>table_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="allinDataSet.xsc">
+      <DependentUpon>allinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="allinDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>allinDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="allinDataSet.xss">
+      <DependentUpon>allinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="allinDataSet1.xsc">
+      <DependentUpon>allinDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="allinDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>allinDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="allinDataSet1.xss">
+      <DependentUpon>allinDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="allinDataSet2.xsc">
+      <DependentUpon>allinDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="allinDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>allinDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="allinDataSet2.xss">
+      <DependentUpon>allinDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="allinDataSet3.xsc">
+      <DependentUpon>allinDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="allinDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>allinDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="allinDataSet3.xss">
+      <DependentUpon>allinDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="App1.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsc">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet.xss">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet1.xsc">
+      <DependentUpon>loginDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet1.xss">
+      <DependentUpon>loginDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet2.xsc">
+      <DependentUpon>loginDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet2.xss">
+      <DependentUpon>loginDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet3.xsc">
+      <DependentUpon>loginDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet3.xss">
+      <DependentUpon>loginDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet4.xsc">
+      <DependentUpon>loginDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet4.xss">
+      <DependentUpon>loginDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet5.xsc">
+      <DependentUpon>loginDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet5.xss">
+      <DependentUpon>loginDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54f90a5f1b8c6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

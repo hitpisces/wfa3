@@ -132,6 +132,7 @@
             this.physical_state1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pollutantdataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pollutant_dataTableAdapter = new WindowsFormsApplication3.cdsjDataSet2TableAdapters.pollutant_dataTableAdapter();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -993,12 +994,22 @@
             // 
             this.pollutant_dataTableAdapter.ClearBeforeFill = true;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(748, 572);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 21);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "批量导入";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // readin_pollution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1044, 604);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox4);
@@ -1125,5 +1136,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn area;
         private System.Windows.Forms.DataGridViewTextBoxColumn pollutated_volume;
         private System.Windows.Forms.DataGridViewTextBoxColumn location_des;
+        private System.Windows.Forms.Button button3;
     }
 }

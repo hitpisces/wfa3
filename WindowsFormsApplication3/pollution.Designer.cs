@@ -126,9 +126,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(428, 9);
+            this.label1.Location = new System.Drawing.Point(428, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 13);
+            this.label1.Size = new System.Drawing.Size(101, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "污染物信息相关表";
             // 
@@ -178,9 +178,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 25);
+            this.groupBox1.Location = new System.Drawing.Point(12, 23);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(470, 352);
+            this.groupBox1.Size = new System.Drawing.Size(470, 325);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "污染物的理化参数";
@@ -188,369 +188,363 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(7, 26);
+            this.label18.Location = new System.Drawing.Point(7, 24);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(55, 13);
+            this.label18.Size = new System.Drawing.Size(53, 12);
             this.label18.TabIndex = 40;
             this.label18.Text = "场地代码";
             // 
             // site_code
             // 
-            this.site_code.Location = new System.Drawing.Point(101, 22);
+            this.site_code.Location = new System.Drawing.Point(101, 20);
             this.site_code.Name = "site_code";
-            this.site_code.Size = new System.Drawing.Size(100, 20);
+            this.site_code.Size = new System.Drawing.Size(100, 21);
             this.site_code.TabIndex = 39;
             // 
             // hazard_statement
             // 
-            this.hazard_statement.Location = new System.Drawing.Point(154, 314);
+            this.hazard_statement.Location = new System.Drawing.Point(154, 290);
             this.hazard_statement.Name = "hazard_statement";
-            this.hazard_statement.Size = new System.Drawing.Size(296, 20);
+            this.hazard_statement.Size = new System.Drawing.Size(296, 21);
             this.hazard_statement.TabIndex = 38;
             // 
             // GHS_signal_word
             // 
-            this.GHS_signal_word.Location = new System.Drawing.Point(154, 288);
+            this.GHS_signal_word.Location = new System.Drawing.Point(154, 266);
             this.GHS_signal_word.Name = "GHS_signal_word";
-            this.GHS_signal_word.Size = new System.Drawing.Size(74, 20);
+            this.GHS_signal_word.Size = new System.Drawing.Size(74, 21);
             this.GHS_signal_word.TabIndex = 37;
             // 
             // flash_point
             // 
-            this.flash_point.Location = new System.Drawing.Point(362, 285);
+            this.flash_point.Location = new System.Drawing.Point(362, 263);
             this.flash_point.Name = "flash_point";
-            this.flash_point.Size = new System.Drawing.Size(88, 20);
+            this.flash_point.Size = new System.Drawing.Size(88, 21);
             this.flash_point.TabIndex = 36;
             // 
             // henry_constant
             // 
-            this.henry_constant.Location = new System.Drawing.Point(154, 262);
+            this.henry_constant.Location = new System.Drawing.Point(154, 242);
             this.henry_constant.Name = "henry_constant";
-            this.henry_constant.Size = new System.Drawing.Size(74, 20);
+            this.henry_constant.Size = new System.Drawing.Size(74, 21);
             this.henry_constant.TabIndex = 35;
             // 
             // refractive_index
             // 
-            this.refractive_index.Location = new System.Drawing.Point(362, 258);
+            this.refractive_index.Location = new System.Drawing.Point(362, 238);
             this.refractive_index.Name = "refractive_index";
-            this.refractive_index.Size = new System.Drawing.Size(88, 20);
+            this.refractive_index.Size = new System.Drawing.Size(88, 21);
             this.refractive_index.TabIndex = 34;
             // 
             // Kow
             // 
-            this.Kow.Location = new System.Drawing.Point(154, 234);
+            this.Kow.Location = new System.Drawing.Point(154, 216);
             this.Kow.Name = "Kow";
-            this.Kow.Size = new System.Drawing.Size(74, 20);
+            this.Kow.Size = new System.Drawing.Size(74, 21);
             this.Kow.TabIndex = 33;
             // 
             // vapor_pressure
             // 
-            this.vapor_pressure.Location = new System.Drawing.Point(355, 233);
+            this.vapor_pressure.Location = new System.Drawing.Point(355, 215);
             this.vapor_pressure.Name = "vapor_pressure";
-            this.vapor_pressure.Size = new System.Drawing.Size(95, 20);
+            this.vapor_pressure.Size = new System.Drawing.Size(95, 21);
             this.vapor_pressure.TabIndex = 32;
             // 
             // solubility_in_water
             // 
-            this.solubility_in_water.Location = new System.Drawing.Point(154, 208);
+            this.solubility_in_water.Location = new System.Drawing.Point(154, 192);
             this.solubility_in_water.Name = "solubility_in_water";
-            this.solubility_in_water.Size = new System.Drawing.Size(74, 20);
+            this.solubility_in_water.Size = new System.Drawing.Size(74, 21);
             this.solubility_in_water.TabIndex = 31;
             // 
             // solubility_in_solvent
             // 
-            this.solubility_in_solvent.Location = new System.Drawing.Point(355, 208);
+            this.solubility_in_solvent.Location = new System.Drawing.Point(355, 192);
             this.solubility_in_solvent.Name = "solubility_in_solvent";
-            this.solubility_in_solvent.Size = new System.Drawing.Size(95, 20);
+            this.solubility_in_solvent.Size = new System.Drawing.Size(95, 21);
             this.solubility_in_solvent.TabIndex = 30;
             // 
             // density
             // 
-            this.density.Location = new System.Drawing.Point(154, 182);
+            this.density.Location = new System.Drawing.Point(154, 168);
             this.density.Name = "density";
-            this.density.Size = new System.Drawing.Size(74, 20);
+            this.density.Size = new System.Drawing.Size(74, 21);
             this.density.TabIndex = 29;
-            this.density.TextChanged += new System.EventHandler(this.density_TextChanged);
             // 
             // apperance
             // 
-            this.apperance.Location = new System.Drawing.Point(101, 151);
+            this.apperance.Location = new System.Drawing.Point(101, 139);
             this.apperance.Name = "apperance";
-            this.apperance.Size = new System.Drawing.Size(349, 20);
+            this.apperance.Size = new System.Drawing.Size(349, 21);
             this.apperance.TabIndex = 28;
             this.apperance.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // boiling_point
             // 
-            this.boiling_point.Location = new System.Drawing.Point(355, 178);
+            this.boiling_point.Location = new System.Drawing.Point(355, 164);
             this.boiling_point.Name = "boiling_point";
-            this.boiling_point.Size = new System.Drawing.Size(95, 20);
+            this.boiling_point.Size = new System.Drawing.Size(95, 21);
             this.boiling_point.TabIndex = 27;
             // 
             // molar_mass
             // 
-            this.molar_mass.Location = new System.Drawing.Point(101, 124);
+            this.molar_mass.Location = new System.Drawing.Point(101, 114);
             this.molar_mass.Name = "molar_mass";
-            this.molar_mass.Size = new System.Drawing.Size(100, 20);
+            this.molar_mass.Size = new System.Drawing.Size(100, 21);
             this.molar_mass.TabIndex = 26;
             // 
             // formula
             // 
-            this.formula.Location = new System.Drawing.Point(350, 121);
+            this.formula.Location = new System.Drawing.Point(350, 112);
             this.formula.Name = "formula";
-            this.formula.Size = new System.Drawing.Size(100, 20);
+            this.formula.Size = new System.Drawing.Size(100, 21);
             this.formula.TabIndex = 25;
             // 
             // LD50
             // 
-            this.LD50.Location = new System.Drawing.Point(101, 99);
+            this.LD50.Location = new System.Drawing.Point(101, 91);
             this.LD50.Name = "LD50";
-            this.LD50.Size = new System.Drawing.Size(100, 20);
+            this.LD50.Size = new System.Drawing.Size(100, 21);
             this.LD50.TabIndex = 24;
             // 
             // CHN_name
             // 
-            this.CHN_name.Location = new System.Drawing.Point(350, 98);
+            this.CHN_name.Location = new System.Drawing.Point(350, 90);
             this.CHN_name.Name = "CHN_name";
-            this.CHN_name.Size = new System.Drawing.Size(100, 20);
+            this.CHN_name.Size = new System.Drawing.Size(100, 21);
             this.CHN_name.TabIndex = 23;
             // 
             // abs_name
             // 
-            this.abs_name.Location = new System.Drawing.Point(100, 75);
+            this.abs_name.Location = new System.Drawing.Point(100, 69);
             this.abs_name.Name = "abs_name";
-            this.abs_name.Size = new System.Drawing.Size(100, 20);
+            this.abs_name.Size = new System.Drawing.Size(100, 21);
             this.abs_name.TabIndex = 22;
             // 
             // CAS_name
             // 
-            this.CAS_name.Location = new System.Drawing.Point(350, 73);
+            this.CAS_name.Location = new System.Drawing.Point(350, 67);
             this.CAS_name.Name = "CAS_name";
-            this.CAS_name.Size = new System.Drawing.Size(100, 20);
+            this.CAS_name.Size = new System.Drawing.Size(100, 21);
             this.CAS_name.TabIndex = 21;
             // 
             // CAS_code
             // 
-            this.CAS_code.Location = new System.Drawing.Point(100, 48);
+            this.CAS_code.Location = new System.Drawing.Point(100, 44);
             this.CAS_code.Name = "CAS_code";
-            this.CAS_code.Size = new System.Drawing.Size(100, 20);
+            this.CAS_code.Size = new System.Drawing.Size(100, 21);
             this.CAS_code.TabIndex = 20;
-            this.CAS_code.TextChanged += new System.EventHandler(this.CAS_code_TextChanged);
             // 
             // general_type
             // 
-            this.general_type.Location = new System.Drawing.Point(350, 48);
+            this.general_type.Location = new System.Drawing.Point(350, 44);
             this.general_type.Name = "general_type";
-            this.general_type.Size = new System.Drawing.Size(100, 20);
+            this.general_type.Size = new System.Drawing.Size(100, 21);
             this.general_type.TabIndex = 19;
             // 
             // physical_state
             // 
-            this.physical_state.Location = new System.Drawing.Point(350, 23);
+            this.physical_state.Location = new System.Drawing.Point(350, 21);
             this.physical_state.Name = "physical_state";
-            this.physical_state.Size = new System.Drawing.Size(100, 20);
+            this.physical_state.Size = new System.Drawing.Size(100, 21);
             this.physical_state.TabIndex = 18;
             this.physical_state.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(12, 317);
+            this.label21.Location = new System.Drawing.Point(12, 293);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(79, 13);
+            this.label21.Size = new System.Drawing.Size(77, 12);
             this.label21.TabIndex = 17;
             this.label21.Text = "危险防范说明";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(254, 289);
+            this.label20.Location = new System.Drawing.Point(254, 267);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(103, 13);
+            this.label20.Size = new System.Drawing.Size(101, 12);
             this.label20.TabIndex = 16;
             this.label20.Text = "污染物的闪点数据";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(225, 101);
+            this.label23.Location = new System.Drawing.Point(225, 93);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(55, 13);
+            this.label23.Size = new System.Drawing.Size(53, 12);
             this.label23.TabIndex = 17;
             this.label23.Text = "中文名称";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(7, 76);
+            this.label22.Location = new System.Drawing.Point(7, 70);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(55, 13);
+            this.label22.Size = new System.Drawing.Size(53, 12);
             this.label22.TabIndex = 16;
             this.label22.Text = "英文缩写";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(9, 291);
+            this.label19.Location = new System.Drawing.Point(9, 269);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 13);
+            this.label19.Size = new System.Drawing.Size(89, 12);
             this.label19.TabIndex = 15;
             this.label19.Text = "污染物的信号词";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 185);
+            this.label10.Location = new System.Drawing.Point(9, 171);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(139, 13);
+            this.label10.Size = new System.Drawing.Size(137, 12);
             this.label10.TabIndex = 6;
             this.label10.Text = "液体和气体污染物的密度";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 154);
+            this.label9.Location = new System.Drawing.Point(7, 142);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 13);
+            this.label9.Size = new System.Drawing.Size(77, 12);
             this.label9.TabIndex = 3;
             this.label9.Text = "物理性状描述";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 127);
+            this.label8.Location = new System.Drawing.Point(9, 117);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 13);
+            this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 2;
             this.label8.Text = "摩尔质量";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(234, 262);
+            this.label17.Location = new System.Drawing.Point(234, 242);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(127, 13);
+            this.label17.Size = new System.Drawing.Size(125, 12);
             this.label17.TabIndex = 13;
             this.label17.Text = "气体污染物的折射系数";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(9, 264);
+            this.label16.Location = new System.Drawing.Point(9, 244);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(127, 13);
+            this.label16.Size = new System.Drawing.Size(125, 12);
             this.label16.TabIndex = 12;
             this.label16.Text = "气体污染物的亨利参数";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(238, 236);
+            this.label15.Location = new System.Drawing.Point(238, 218);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(115, 13);
+            this.label15.Size = new System.Drawing.Size(113, 12);
             this.label15.TabIndex = 11;
             this.label15.Text = "污染物的蒸汽压数据";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(9, 238);
+            this.label14.Location = new System.Drawing.Point(9, 220);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(94, 13);
+            this.label14.Size = new System.Drawing.Size(95, 12);
             this.label14.TabIndex = 10;
             this.label14.Text = "辛醇-水分配系数";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(238, 213);
+            this.label13.Location = new System.Drawing.Point(238, 197);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 13);
+            this.label13.Size = new System.Drawing.Size(113, 12);
             this.label13.TabIndex = 9;
             this.label13.Text = "有机溶剂中的溶解度";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(9, 212);
+            this.label12.Location = new System.Drawing.Point(9, 196);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 13);
+            this.label12.Size = new System.Drawing.Size(65, 12);
             this.label12.TabIndex = 8;
             this.label12.Text = "水中溶解度";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(270, 185);
+            this.label11.Location = new System.Drawing.Point(270, 171);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.Size = new System.Drawing.Size(29, 12);
             this.label11.TabIndex = 7;
             this.label11.Text = "沸点";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(225, 124);
+            this.label7.Location = new System.Drawing.Point(225, 114);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.Size = new System.Drawing.Size(41, 12);
             this.label7.TabIndex = 5;
             this.label7.Text = "化学式";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 101);
+            this.label6.Location = new System.Drawing.Point(6, 93);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 13);
+            this.label6.Size = new System.Drawing.Size(89, 12);
             this.label6.TabIndex = 4;
             this.label6.Text = "半数致死量LD50";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(225, 75);
+            this.label5.Location = new System.Drawing.Point(225, 69);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 13);
+            this.label5.Size = new System.Drawing.Size(119, 12);
             this.label5.TabIndex = 3;
             this.label5.Text = "CAS系统中中英文名称";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 51);
+            this.label4.Location = new System.Drawing.Point(7, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 13);
+            this.label4.Size = new System.Drawing.Size(83, 12);
             this.label4.TabIndex = 2;
             this.label4.Text = "CAS系统中代码";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(225, 51);
+            this.label3.Location = new System.Drawing.Point(225, 47);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 1;
             this.label3.Text = "分类·";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(225, 29);
+            this.label2.Location = new System.Drawing.Point(225, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.Size = new System.Drawing.Size(77, 12);
             this.label2.TabIndex = 0;
             this.label2.Text = "常见物理形态";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(9, 26);
+            this.label29.Location = new System.Drawing.Point(9, 24);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(103, 13);
+            this.label29.Size = new System.Drawing.Size(101, 12);
             this.label29.TabIndex = 5;
             this.label29.Text = "污染物的中文名称";
             // 
@@ -574,146 +568,145 @@
             this.groupBox3.Controls.Add(this.label31);
             this.groupBox3.Controls.Add(this.label30);
             this.groupBox3.Controls.Add(this.label29);
-            this.groupBox3.Location = new System.Drawing.Point(12, 392);
+            this.groupBox3.Location = new System.Drawing.Point(12, 362);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(470, 147);
+            this.groupBox3.Size = new System.Drawing.Size(470, 136);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "污染源";
             // 
             // source_volume
             // 
-            this.source_volume.Location = new System.Drawing.Point(168, 96);
+            this.source_volume.Location = new System.Drawing.Point(168, 89);
             this.source_volume.Name = "source_volume";
-            this.source_volume.Size = new System.Drawing.Size(282, 20);
+            this.source_volume.Size = new System.Drawing.Size(282, 21);
             this.source_volume.TabIndex = 16;
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(11, 97);
+            this.label39.Location = new System.Drawing.Point(11, 90);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(151, 13);
+            this.label39.Size = new System.Drawing.Size(149, 12);
             this.label39.TabIndex = 7;
             this.label39.Text = "预估污染土方量或地下水量";
             // 
             // trans_path
             // 
-            this.trans_path.Location = new System.Drawing.Point(128, 120);
+            this.trans_path.Location = new System.Drawing.Point(128, 111);
             this.trans_path.Name = "trans_path";
-            this.trans_path.Size = new System.Drawing.Size(322, 20);
+            this.trans_path.Size = new System.Drawing.Size(322, 21);
             this.trans_path.TabIndex = 7;
             // 
             // source_area
             // 
-            this.source_area.Location = new System.Drawing.Point(350, 74);
+            this.source_area.Location = new System.Drawing.Point(350, 68);
             this.source_area.Name = "source_area";
-            this.source_area.Size = new System.Drawing.Size(100, 20);
+            this.source_area.Size = new System.Drawing.Size(100, 21);
             this.source_area.TabIndex = 15;
             // 
             // location_coordinate
             // 
-            this.location_coordinate.Location = new System.Drawing.Point(128, 73);
+            this.location_coordinate.Location = new System.Drawing.Point(128, 67);
             this.location_coordinate.Name = "location_coordinate";
-            this.location_coordinate.Size = new System.Drawing.Size(100, 20);
+            this.location_coordinate.Size = new System.Drawing.Size(100, 21);
             this.location_coordinate.TabIndex = 14;
             // 
             // location_des
             // 
-            this.location_des.Location = new System.Drawing.Point(350, 48);
+            this.location_des.Location = new System.Drawing.Point(350, 44);
             this.location_des.Name = "location_des";
-            this.location_des.Size = new System.Drawing.Size(100, 20);
+            this.location_des.Size = new System.Drawing.Size(100, 21);
             this.location_des.TabIndex = 13;
             // 
             // source_type
             // 
-            this.source_type.Location = new System.Drawing.Point(128, 49);
+            this.source_type.Location = new System.Drawing.Point(128, 45);
             this.source_type.Name = "source_type";
-            this.source_type.Size = new System.Drawing.Size(100, 20);
+            this.source_type.Size = new System.Drawing.Size(100, 21);
             this.source_type.TabIndex = 12;
             // 
             // source_number
             // 
-            this.source_number.Location = new System.Drawing.Point(350, 19);
+            this.source_number.Location = new System.Drawing.Point(350, 18);
             this.source_number.Name = "source_number";
-            this.source_number.Size = new System.Drawing.Size(100, 20);
+            this.source_number.Size = new System.Drawing.Size(100, 21);
             this.source_number.TabIndex = 11;
             // 
             // pollutant_name
             // 
-            this.pollutant_name.Location = new System.Drawing.Point(128, 23);
+            this.pollutant_name.Location = new System.Drawing.Point(128, 21);
             this.pollutant_name.Name = "pollutant_name";
-            this.pollutant_name.Size = new System.Drawing.Size(100, 20);
+            this.pollutant_name.Size = new System.Drawing.Size(100, 21);
             this.pollutant_name.TabIndex = 10;
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(12, 123);
+            this.label37.Location = new System.Drawing.Point(12, 114);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(79, 13);
+            this.label37.Size = new System.Drawing.Size(77, 12);
             this.label37.TabIndex = 8;
             this.label37.Text = "潜在污染途径";
-            this.label37.Click += new System.EventHandler(this.label37_Click);
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(10, 73);
+            this.label35.Location = new System.Drawing.Point(10, 67);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(91, 13);
+            this.label35.Size = new System.Drawing.Size(89, 12);
             this.label35.TabIndex = 9;
             this.label35.Text = "污染源坐标位置";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(252, 73);
+            this.label36.Location = new System.Drawing.Point(252, 67);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(67, 13);
+            this.label36.Size = new System.Drawing.Size(65, 12);
             this.label36.TabIndex = 7;
             this.label36.Text = "污染源面积";
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(252, 49);
+            this.label34.Location = new System.Drawing.Point(252, 45);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(91, 13);
+            this.label34.Size = new System.Drawing.Size(89, 12);
             this.label34.TabIndex = 7;
             this.label34.Text = "对污染源的描述";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(252, 49);
+            this.label33.Location = new System.Drawing.Point(252, 45);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(0, 13);
+            this.label33.Size = new System.Drawing.Size(0, 12);
             this.label33.TabIndex = 7;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(246, 49);
+            this.label32.Location = new System.Drawing.Point(246, 45);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(0, 13);
+            this.label32.Size = new System.Drawing.Size(0, 12);
             this.label32.TabIndex = 8;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(9, 49);
+            this.label31.Location = new System.Drawing.Point(9, 45);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(67, 13);
+            this.label31.Size = new System.Drawing.Size(65, 12);
             this.label31.TabIndex = 7;
             this.label31.Text = "污染源类型";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(252, 26);
+            this.label30.Location = new System.Drawing.Point(252, 24);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(67, 13);
+            this.label30.Size = new System.Drawing.Size(65, 12);
             this.label30.TabIndex = 6;
             this.label30.Text = "污染源编号";
             // 
@@ -721,7 +714,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(594, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 21);
             this.button1.TabIndex = 7;
             this.button1.Text = "返回";
             this.button1.UseVisualStyleBackColor = true;
@@ -729,10 +722,10 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(497, 258);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Location = new System.Drawing.Point(497, 238);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 18);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(503, 274);
+            this.webBrowser1.Size = new System.Drawing.Size(503, 253);
             this.webBrowser1.TabIndex = 8;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
@@ -749,9 +742,9 @@
             this.eventdetailDataGridViewTextBoxColumn,
             this.healthriskDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.siteeventBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(497, 33);
+            this.dataGridView1.Location = new System.Drawing.Point(497, 30);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(503, 207);
+            this.dataGridView1.Size = new System.Drawing.Size(503, 191);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -832,10 +825,10 @@
             // 
             // pollution
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1049, 578);
+            this.ClientSize = new System.Drawing.Size(1049, 534);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.button1);

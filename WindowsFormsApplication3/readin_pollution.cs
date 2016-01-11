@@ -94,12 +94,13 @@ namespace WindowsFormsApplication3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (main_login.Myclass.auth_type == "user      ")
+            if (main_login.Myclass.auth_type == "10")
             {
-                MessageBox.Show("当前身份是用户，无法读写数据库！");
+                MessageBox.Show("当前身份是普通用户，无法读写数据库！");
             }
-            else if (main_login.Myclass.auth_type == "admin     ")
+            else if (main_login.Myclass.auth_type != "10")
             {
+                DataSet ds_write = new DataSet();
                 /*
                 string strConnectionn = "Data Source=(local);Initial Catalog=cdsj;Integrated Security=True";
                 SqlConnection lo_conn = new SqlConnection(strConnectionn);

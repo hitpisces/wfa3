@@ -17,7 +17,7 @@ namespace WindowsFormsApplication3
            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new media_doc());
+            Application.Run(new search_engine());
 
             
          }

@@ -64,7 +64,7 @@ namespace WindowsFormsApplication3
         {
             try
             { 
-            string strConnection = "Data Source=(local);Initial Catalog = cdsj;Integrated Security=true";//Initial catalog后面跟数据库的名字
+            string strConnection = "Data Source=WIN-H71C4G8Z0AL;Initial Catalog=cdsj;Persist Security Info=True;User ID=sa;Password=sustc@10";//Initial catalog后面跟数据库的名字
             SqlConnection conn = new SqlConnection(strConnection);
             conn.Open();//数据库链接打开
             SqlCommand cmd = new SqlCommand();

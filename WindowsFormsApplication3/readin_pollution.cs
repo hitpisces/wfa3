@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;//连接数据库
-using System.Data.Sql;
-using System.Data.OleDb;//连接数据库
 
 
 namespace WindowsFormsApplication3
@@ -19,15 +11,13 @@ namespace WindowsFormsApplication3
         public readin_pollution()
         {
             InitializeComponent();
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             try
-            { 
-            string strConnection = "Data Source=(local);Initial Catalog=cdsj;Integrated Security=True";
-            SqlConnection lo_con = new SqlConnection(strConnection);
+            {             
+            SqlConnection lo_con = new SqlConnection(main_login.Myclass.strConnection);
             lo_con.Open();
             SqlCommand lo_cmd = new SqlCommand();
             lo_cmd.CommandText = "select * from pollutant_data where site_code = " + "'" + search_engine.Myclass.sitecode + "'";
@@ -94,13 +84,21 @@ namespace WindowsFormsApplication3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (main_login.Myclass.auth_type == "10")
+            if (main_login.Myclass.auth_type == "11")
             {
-                MessageBox.Show("当前身份是普通用户，无法读写数据库！");
+                MessageBox.Show("当前身份是普通用户，无法修改数据库！");
+                button1.Enabled = false;
+                foreach(Control c in this.Controls)
+                {
+                    LoopControls(c);
+                }
             }
             else if (main_login.Myclass.auth_type != "10")
             {
                 DataSet ds_write = new DataSet();
+                string strConnection = "Data Source=DESKTOP-SK2RD82;Initial Catalog=cdsj;Integrated Security=True";
+                SqlConnection lo_conn = new SqlConnection(strConnection);
+                //string 
                 /*
                 string strConnectionn = "Data Source=(local);Initial Catalog=cdsj;Integrated Security=True";
                 SqlConnection lo_conn = new SqlConnection(strConnectionn);
@@ -172,8 +170,22 @@ namespace WindowsFormsApplication3
             trans_path_tb.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
         }
 
-
-
+        
+        public void LoopControls(Control container)//循环窗体控件
+        {
+            foreach(Control c in container.Controls){
+                if (c is TextBox)
+                {
+                    TextBox tb = c as TextBox;
+                    tb.Enabled = false;
+                }
+            if (c.HasChildren)
+                {
+                    LoopControls(c);
+                }
+            }
+        }
+        
  
 
 

@@ -44,7 +44,7 @@ namespace WindowsFormsApplication3
         {
             site_code.Text = text;
 
-            string strConnection = "Data Source=(local);Initial Catalog=cdsj;Integrated Security=True";
+            string strConnection = "Data Source=WIN-H71C4G8Z0AL;Initial Catalog=cdsj;Persist Security Info=True;User ID=sa;Password=sustc@10";
             SqlConnection lo_con = new SqlConnection(strConnection);
             lo_con.Open();
             SqlCommand lo_cmd = new SqlCommand(); 

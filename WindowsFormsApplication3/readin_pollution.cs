@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using System.Data.SqlClient;//连接数据库
+using System.Drawing;
 
 
 namespace WindowsFormsApplication3
@@ -10,7 +11,12 @@ namespace WindowsFormsApplication3
     {
         public readin_pollution()
         {
+            DataSet ds_mirror = new DataSet();
             InitializeComponent();
+            if(main_login.Myclass.auth_type == "11")
+            {
+                button1.Enabled = false;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -71,6 +77,7 @@ namespace WindowsFormsApplication3
             trans_path_tb.Text = ds_pollution.Tables["pollutant_source"].Rows[0][10].ToString();
 
             lo_con.Close();
+            
             }
             catch(Exception)
             {
@@ -84,17 +91,12 @@ namespace WindowsFormsApplication3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (main_login.Myclass.auth_type == "11")
+            LoopControls(this);
+            if (MessageBox.Show("是否确认将高亮修改部分写入数据库？", "提示",MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                MessageBox.Show("当前身份是普通用户，无法修改数据库！");
-                button1.Enabled = false;
-                foreach(Control c in this.Controls)
-                {
-                    LoopControls(c);
-                }
+
             }
-            else if (main_login.Myclass.auth_type != "10")
-            {
+           
                 DataSet ds_write = new DataSet();
                 string strConnection = "Data Source=DESKTOP-SK2RD82;Initial Catalog=cdsj;Integrated Security=True";
                 SqlConnection lo_conn = new SqlConnection(strConnection);
@@ -130,7 +132,7 @@ namespace WindowsFormsApplication3
                  */
                 MessageBox.Show("录入完成！");
 
-            }
+           
         }
 
         private void dataGridView2_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -173,17 +175,21 @@ namespace WindowsFormsApplication3
         
         public void LoopControls(Control container)//循环窗体控件
         {
+            int i = 0;
             foreach(Control c in container.Controls){
                 if (c is TextBox)
                 {
                     TextBox tb = c as TextBox;
-                    tb.Enabled = false;
+                    if (string.IsNullOrWhiteSpace(tb.Text)){
+                        tb.BackColor = Color.Yellow;
+                        i++;
+                    }
                 }
             if (c.HasChildren)
                 {
                     LoopControls(c);
                 }
-            }
+            }            
         }
         
  

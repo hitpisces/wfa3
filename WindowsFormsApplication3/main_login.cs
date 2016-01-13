@@ -31,15 +31,33 @@ namespace WindowsFormsApplication3
                 SqlCommand cmd = new SqlCommand("select * from login where username = '" + textBox1.Text.Trim() + "' and password = '" + GetMD5Hash(textBox2.Text.Trim()) + "'", conn);//建立命令对象。查询输入的用户名密码是否在数据库中
                 SqlDataReader sdr = cmd.ExecuteReader();
                 sdr.Read();
+
                 if (sdr.HasRows)
                 {
-                   MessageBox.Show("登录成功！");
                    sdr.Close();
                    string sql20 = "select auth_type from login where username = '" + textBox1.Text.Trim() + "' and password = '" + GetMD5Hash(textBox2.Text.Trim()) + "'";//查询登录权限
                    SqlCommand cmd20 = new SqlCommand(sql20, conn);//建立命令对象
                    string auth_type = (string)cmd20.ExecuteScalar();//通过executescalar方法返回单值
                    Myclass.auth_type = auth_type;
-                   //menu f2 = new menu();
+                   
+                switch (Myclass.auth_type)
+                {
+                    case ("00"):
+                        MessageBox.Show("提示：您将以系统管理员身份登录，请慎重操作！");
+                        break;
+
+                    case ("01"):
+                        MessageBox.Show("提示：您将以审核者身份登录，请慎重操作！");
+                        break;
+
+                    case ("10"):
+                        MessageBox.Show("提示：您将以数据录入者身份登录，请慎重操作！");
+                        break;
+
+                    case ("11"):
+                        MessageBox.Show("提示：您将以普通用户身份登录，无法写数据库！");
+                        break;
+                }
                    search_engine f2 = new search_engine();
                    f2.Show();
                    this.Hide();

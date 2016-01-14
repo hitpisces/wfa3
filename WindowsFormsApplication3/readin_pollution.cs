@@ -9,9 +9,9 @@ namespace WindowsFormsApplication3
 {
     public partial class readin_pollution : Form
     {
+        public DataSet ds_mirror = new DataSet();
         public readin_pollution()
         {
-            DataSet ds_mirror = new DataSet();
             InitializeComponent();
             if(main_login.Myclass.auth_type == "11")
             {
@@ -21,6 +21,10 @@ namespace WindowsFormsApplication3
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            DataSet ds_pollution = new DataSet();
+            ds_pollution.Tables.Clear();
+
             try
             {             
             SqlConnection lo_con = new SqlConnection(main_login.Myclass.strConnection);
@@ -29,7 +33,6 @@ namespace WindowsFormsApplication3
             lo_cmd.CommandText = "select * from pollutant_data where site_code = " + "'" + search_engine.Myclass.sitecode + "'";
             lo_cmd.Connection = lo_con;
             SqlDataAdapter dbAdapter = new SqlDataAdapter(lo_cmd);
-            DataSet ds_pollution = new DataSet();
             dbAdapter.Fill(ds_pollution, "pollutant_data");
 
             dataGridView2.AutoGenerateColumns = false;
@@ -77,7 +80,9 @@ namespace WindowsFormsApplication3
             trans_path_tb.Text = ds_pollution.Tables["pollutant_source"].Rows[0][10].ToString();
 
             lo_con.Close();
-            
+                ds_mirror.Tables.Clear();
+            ds_mirror = ds_pollution.Clone();
+
             }
             catch(Exception)
             {
@@ -92,12 +97,12 @@ namespace WindowsFormsApplication3
         private void button1_Click(object sender, EventArgs e)
         {
             LoopControls(this);
-            if (MessageBox.Show("是否确认将高亮修改部分写入数据库？", "提示",MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("有空白内容，是否写入数据库？", "提示",MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
 
             }
            
-                DataSet ds_write = new DataSet();
+                
                 string strConnection = "Data Source=DESKTOP-SK2RD82;Initial Catalog=cdsj;Integrated Security=True";
                 SqlConnection lo_conn = new SqlConnection(strConnection);
                 //string 

@@ -80,7 +80,7 @@ namespace WindowsFormsApplication3
             trans_path_tb.Text = ds_pollution.Tables["pollutant_source"].Rows[0][10].ToString();
 
             lo_con.Close();
-                ds_mirror.Tables.Clear();
+            ds_mirror.Tables.Clear();
             ds_mirror = ds_pollution.Clone();
 
             }
@@ -99,7 +99,29 @@ namespace WindowsFormsApplication3
             LoopControls(this);
             if (MessageBox.Show("有空白内容，是否写入数据库？", "提示",MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
+                ds_mirror.Tables["pollutant_data"].Rows[0][1]=site_code_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][23]= physical_state_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][2]= general_type_tb.Text.ToString();
+                CAS_code_tb.Text = ds_mirror.Tables["pollutant_data"].Rows[0][3].ToString();
+                CAS_name_tb.Text = ds_mirror.Tables["pollutant_data"].Rows[0][4].ToString();
+                abs_name_tb.Text = ds_mirror.Tables["pollutant_data"].Rows[0][5].ToString();
+                CHN_name_tb.Text = ds_mirror.Tables["pollutant_data"].Rows[0][6].ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][7]= LD50_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][8]= formula_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][11]= molar_mass_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][12]= apperance_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][13]= density_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][14]= boiling_point_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][15]= solubility_in_water_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][16]= solubility_in_solvent_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][17]= Kow_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][18]= vapor_pressure_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][21]= henry_constant_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][19]= refractive_index_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][20]= flash_point_tb.Text.ToString();
+                ds_mirror.Tables["pollutant_data"].Rows[0][22]= hazard_statement_tb.Text.ToString();
 
+                
             }
            
                 

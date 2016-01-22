@@ -127,7 +127,7 @@ namespace WindowsFormsApplication3
                 
                 string strConnection = "Data Source=DESKTOP-SK2RD82;Initial Catalog=cdsj;Integrated Security=True";
                 SqlConnection lo_conn = new SqlConnection(strConnection);
-                //string 
+                //string haha
                 /*
                 string strConnectionn = "Data Source=(local);Initial Catalog=cdsj;Integrated Security=True";
                 SqlConnection lo_conn = new SqlConnection(strConnectionn);
